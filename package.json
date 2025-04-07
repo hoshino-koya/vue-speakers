@@ -1,13 +1,28 @@
 {
-  "name": "nexusai",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "vuefes-japan-speakers",
   "private": true,
-  "workspaces": [
-    "./packages/*"
-  ],
+  "type": "module",
   "scripts": {
-    "compile": "tsc  --build --force tsconfig.json"
-  }
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^0.5.7",
+    "@nuxt/ui": "2.18.4",
+    "@nuxthub/core": "^0.7.12",
+    "nuxt": "^3.13.1",
+    "vue": "^3.5.4",
+    "vue-router": "^4.4.4"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.5.7",
+    "eslint": "^9.10.0",
+    "vue-tsc": "^2.1.6",
+    "wrangler": "^3.76.0"
+  },
+  "packageManager": "pnpm@9.8.0"
 }
